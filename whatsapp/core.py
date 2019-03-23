@@ -48,7 +48,7 @@ class WhatsApp():
         print(df)
         df1 = df[df.sender == 'David']
         df2 = df[df.sender == 'Ros']
-        bins = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+        bins = [i for i in range(1, 21)]
         df1.hist(column='words', bins=bins)
         plt.xlabel("David: Numero de Palabras en el Mensaje", fontsize=15)
         plt.ylabel("Mensajes Enviados", fontsize=15)
